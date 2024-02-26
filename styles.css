@@ -51,13 +51,13 @@ nav a{
 }
 h1{
     font-size: 3em;
+    margin: 0 20px;
 }
 h2{
     font-size: 2em;
 }
 body {
     width: 485px;
-    background-color: white;
     margin:0 40px;
 }
 h1, h2, h3{
@@ -102,9 +102,9 @@ header nav{
     position:relative;
     justify-content: center;
     text-align: center;
-    margin: 20px;
-    padding:20px;
+    padding:10px;
     text-wrap: wrap;
+    background-color: white;
 }
 h2{
     font-size: 24px;
@@ -112,6 +112,7 @@ h2{
     padding-bottom: 15px;
     text-align: center;
     padding: 10px;
+    background-color: #ffffff;
 }
 #about p{
     text-align: left;
@@ -122,14 +123,71 @@ h2{
     grid-template-columns: 1fr;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: white;
 }
 #gallery p{
     text-align: left;
+    padding:10px;
+    background-color: white;
+}
+label{
+    color:white;
+    margin-bottom: 5px;
+}
+input, textarea {
+    padding:5px;
+    margin-bottom:5px;
+    align-items: center;
+    justify-content: center;
+}
+::placeholder{
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    max-width: 300px;
+}
+#contact{
+    display:flexbox;
+    text-wrap:wrap;
+    text:white;
+}
+#contact h2{
+    color:white;
+    background-color: #000000;
     margin: 10px;
 }
+#contact p{
+    color:white;
+    text-align: center;
+    text-wrap: wrap;
+    margin: 20px;
+}
+footer{
+    margin-top: 15px;
+    color:white;
+    text-align: center;
+}
 @media screen and (min-width:880px){
+html, body{
+    width:880px;
+}
+h1{
+    text-align: left;
+}
+.gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-wrap: wrap;
+}
+figcaption{
+    display:relative;
 
-
+}
 
 }
 
