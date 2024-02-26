@@ -92,9 +92,10 @@ h2{
     text-align: left;
 }
 .gallery{
-    display:grid;
+    display:flex;
     position:relative;
     grid-template-columns: 1fr;
+    flex-wrap: wrap;
     justify-content: center;
 }
 @media screen and (min-width:880px){
