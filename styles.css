@@ -37,9 +37,12 @@ html{
     border:20px;
     position:relative;
     justify-content: center;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     width: 485px;
+    background-color: #ffffff;
 }
 h1, h2, h3{
     text-transform: uppercase;
@@ -50,20 +53,17 @@ h3{
 h1, h2{
     font-weight:bold;
 }
-header nav li{
+li{
     font-weight:bold;
     text-transform: uppercase;
     text-decoration:none;
     color:white;
 }
-header h1{
+h1{
+    font-size:35px;
+    background-color: white;
     color:#007d7b;
-    background-color:white;
-    display:block;
-    position:relative;
-    justify-content: center;
     text-align: center;
-    margin:auto;
 }
 header nav{
     position:relative;
@@ -78,10 +78,24 @@ header nav{
     display:block;
     position:relative;
     justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+}
+#about p{
+    text-align: left;
 }
 .gallery{
     display:grid;
     position:relative;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 @media screen and (min-width:880px){
 
