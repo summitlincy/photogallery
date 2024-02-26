@@ -40,9 +40,25 @@ html{
     background-color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
+p{
+    font-size:1.25em;
+}
+figcaption, label, input, small{
+    font-size:1em;
+}
+nav a{
+    font-size:1.5em;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
 body {
     width: 485px;
-    background-color: #ffffff;
+    background-color: white;
+    margin:0 40px;
 }
 h1, h2, h3{
     text-transform: uppercase;
@@ -53,33 +69,42 @@ h3{
 h1, h2{
     font-weight:bold;
 }
-li{
-    font-weight:bold;
-    text-transform: uppercase;
-    text-decoration:none;
+a{
+    text-decoration: none;
     color:white;
+}
+li{
+    display: inline-table;
+    text-transform: uppercase;
+    padding: 3px;
+    color:white;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 h1{
     font-size:35px;
-    background-color: white;
     color:#007d7b;
     text-align: center;
+    background-color: white;
 }
 header nav{
     position:relative;
     display:grid;
     overflow: auto;   
-    background-color: #000000;
     justify-content:center;
     margin:auto;
     text-align: center;
+    background-color: #000000;
 }
 #about{
     display:block;
     position:relative;
     justify-content: center;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
+    padding:20px;
+    text-wrap: wrap;
 }
 h2{
     font-size: 24px;
@@ -97,6 +122,10 @@ h2{
     grid-template-columns: 1fr;
     flex-wrap: wrap;
     justify-content: center;
+}
+#gallery p{
+    text-align: left;
+    margin: 10px;
 }
 @media screen and (min-width:880px){
 
