@@ -23,10 +23,6 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 *
 text{
     font-family: Arial, Helvetica, sans-serif;
@@ -38,9 +34,8 @@ text{
 }
 
 html{
-    background-color: black;
     border:20px;
-    border-color: white;
+    position:relative;
     justify-content: center;
 }
 body {
@@ -49,28 +44,45 @@ body {
 h1, h2, h3{
     text-transform: uppercase;
 }
+h3{
+    justify-content: center;
+}
 h1, h2{
     font-weight:bold;
 }
-nav li{
-    font-family: Arial, Helvetica, sans-serif;
+header nav li{
     font-weight:bold;
     text-transform: uppercase;
     text-decoration:none;
     color:white;
-    font-size: medium;
 }
-nav{
+header h1{
+    color:#007d7b;
+    background-color:white;
+    display:block;
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+}
+header nav{
+    position:relative;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    overflow: auto;   
+    background-color: #000000;
+    justify-content:center;
+    margin:auto;
+    text-align: center;
 }
-
-
-
-
-
-
+#about{
+    display:block;
+    position:relative;
+    justify-content: center;
+}
+.gallery{
+    display:grid;
+    position:relative;
+}
 @media screen and (min-width:880px){
 
 
