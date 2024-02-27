@@ -145,12 +145,15 @@ input, textarea {
     font-weight: bold;
 }
 form{
+    position:relative;
+    margin-top: 20px;
+    justify-content: center;
     display:flex;
     flex-direction:column;
     max-width: 300px;
 }
 #contact{
-    display:inline-flex;
+    display:inline-block;
     color:white;
 }
 #contact h2{
@@ -159,9 +162,14 @@ form{
     margin: 10px;
 }
 #contact p{
+    position:relative;
     color:white;
     text-align: center;
     margin: 20px;
+}
+.container{
+    position:relative;
+    display:inline-block;
 }
 footer{
     margin-top: 15px;
@@ -218,6 +226,4 @@ header nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
-
-
 }
