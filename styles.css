@@ -103,7 +103,6 @@ header nav{
     justify-content: center;
     text-align: center;
     padding:10px;
-    text-wrap: wrap;
     background-color: white;
 }
 h2{
@@ -151,9 +150,8 @@ form{
     max-width: 300px;
 }
 #contact{
-    display:flexbox;
-    text-wrap:wrap;
-    text:white;
+    display:inline-flex;
+    color:white;
 }
 #contact h2{
     color:white;
@@ -163,7 +161,6 @@ form{
 #contact p{
     color:white;
     text-align: center;
-    text-wrap: wrap;
     margin: 20px;
 }
 footer{
@@ -171,6 +168,22 @@ footer{
     color:white;
     text-align: center;
 }
+figure{
+    display:grid;
+    position:relative;
+}
+figure figcaption{
+    position:absolute;
+    margin-top: 0;
+    color:white;
+    text-align: center;
+    align-content: center;
+}
+.nav li:last-child{
+    position:absolute;
+    bottom:0;
+}
+
 @media screen and (min-width:880px){
 html, body{
     width:880px;
@@ -182,17 +195,29 @@ h1{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    text-wrap: wrap;
 }
 figcaption{
-    display:relative;
+    position:absolute;
 
 }
 
 }
 
 @media screen and (min-width:1300px){
-
+html, body{
+    width:1300px;
+}
+h1{
+    text-align: left;
+}
+header nav{
+    justify-content: right;
+}
+.gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
 
 
 }
